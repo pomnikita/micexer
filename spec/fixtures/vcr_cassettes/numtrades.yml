@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.micex.ru/iss/engines/stock/markets/shares/boards/eqne/securities/gazp.json?iss.only=marketdata&marketdata.columns=NUMTRADES
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.8.53
+      Date:
+      - Tue, 24 Apr 2012 13:22:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Micexpassport-Marker:
+      - denied
+      Set-Cookie:
+      - MicexTrackID=91.215.122.91.1335273776500472; path=/; expires=Tue, 22-May-12
+        13:22:56 GMT; domain=.micex.ru
+      Cache-Control:
+      - max-age=5
+      Expires:
+      - Tue, 24 Apr 2012 13:23:01 GMT
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: US-ASCII
+      string: ! "{\n\"marketdata\": {\n\t\"metadata\": {\n\t\t\"NUMTRADES\": {\"type\":
+        \"int32\"}\n\t},\n\t\"columns\": [\"NUMTRADES\"], \n\t\"data\": [\n\t\t[43054]\n\t]\n}}\n"
+    http_version: 
+  recorded_at: Tue, 24 Apr 2012 13:22:56 GMT
+recorded_with: VCR 2.0.1

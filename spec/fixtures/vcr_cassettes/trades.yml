@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.micex.ru/iss/engines/stock/markets/shares/boards/eqne/securities/gazp/trades.json?start=43630&trades.columns=TRADENO,TRADETIME,BOARDID,SECID,PRICE,QUANTITY,BUYSELL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/0.8.53
+      Date:
+      - Tue, 24 Apr 2012 13:30:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Micexpassport-Marker:
+      - denied
+      Set-Cookie:
+      - MicexTrackID=91.215.122.91.1335274214276782; path=/; expires=Tue, 22-May-12
+        13:30:14 GMT; domain=.micex.ru
+      Cache-Control:
+      - max-age=5
+      Expires:
+      - Tue, 24 Apr 2012 13:30:19 GMT
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: US-ASCII
+      string: ! "{\n\"trades\": {\n\t\"metadata\": {\n\t\t\"TRADENO\": {\"type\":
+        \"int64\"},\n\t\t\"TRADETIME\": {\"type\": \"time\", \"bytes\": 8, \"max_size\":
+        0},\n\t\t\"BOARDID\": {\"type\": \"string\", \"bytes\": 12, \"max_size\":
+        0},\n\t\t\"SECID\": {\"type\": \"string\", \"bytes\": 36, \"max_size\": 0},\n\t\t\"PRICE\":
+        {\"type\": \"double\"},\n\t\t\"QUANTITY\": {\"type\": \"int32\"},\n\t\t\"BUYSELL\":
+        {\"type\": \"string\", \"bytes\": 3, \"max_size\": 0}\n\t},\n\t\"columns\":
+        [\"TRADENO\", \"TRADETIME\", \"BOARDID\", \"SECID\", \"PRICE\", \"QUANTITY\",
+        \"BUYSELL\"], \n\t\"data\": [\n\t\t[1622991294, \"17:15:13\", \"EQNE\", \"GAZP\",
+        163.7, 30, \"B\"],\n\t\t[1622991295, \"17:15:13\", \"EQNE\", \"GAZP\", 163.7,
+        100, \"B\"],\n\t\t[1622991296, \"17:15:13\", \"EQNE\", \"GAZP\", 163.7, 150,
+        \"B\"],\n\t\t[1622991297, \"17:15:13\", \"EQNE\", \"GAZP\", 163.7, 150, \"B\"],\n\t\t[1622991298,
+        \"17:15:13\", \"EQNE\", \"GAZP\", 163.7, 150, \"B\"],\n\t\t[1622991299, \"17:15:13\",
+        \"EQNE\", \"GAZP\", 163.7, 20, \"B\"],\n\t\t[1622991343, \"17:15:14\", \"EQNE\",
+        \"GAZP\", 163.63, 28, \"S\"],\n\t\t[1622991344, \"17:15:14\", \"EQNE\", \"GAZP\",
+        163.63, 2, \"S\"],\n\t\t[1622991345, \"17:15:14\", \"EQNE\", \"GAZP\", 163.62,
+        1, \"S\"],\n\t\t[1622991346, \"17:15:14\", \"EQNE\", \"GAZP\", 163.62, 167,
+        \"S\"],\n\t\t[1622991347, \"17:15:14\", \"EQNE\", \"GAZP\", 163.61, 2, \"S\"],\n\t\t[1622991357,
+        \"17:15:14\", \"EQNE\", \"GAZP\", 163.61, 13, \"S\"],\n\t\t[1622991358, \"17:15:14\",
+        \"EQNE\", \"GAZP\", 163.61, 2, \"S\"],\n\t\t[1622991359, \"17:15:14\", \"EQNE\",
+        \"GAZP\", 163.61, 40, \"S\"],\n\t\t[1622991360, \"17:15:14\", \"EQNE\", \"GAZP\",
+        163.61, 145, \"S\"]\n\t]\n},\n\"dataversion\": {\n\t\"metadata\": {\n\t\t\"version\":
+        {\"type\": \"int32\"},\n\t\t\"seqnum\": {\"type\": \"int32\"}\n\t},\n\t\"columns\":
+        [\"version\", \"seqnum\"], \n\t\"data\": [\n\t\t[112, 4715934]\n\t]\n}}\n"
+    http_version: 
+  recorded_at: Tue, 24 Apr 2012 13:30:14 GMT
+recorded_with: VCR 2.0.1
